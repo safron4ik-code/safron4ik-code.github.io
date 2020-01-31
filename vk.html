@@ -6,29 +6,14 @@
 <body>
 	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 
-	<script type="text/javascript">
-var status = false;
-var getUserName = function () {
-VK.api("users.get", {user_ids: "253638789"}, function(data) {
-console.log(data.response);	
-})
-}
-	VK.init(function() {
-var status = true;
-	console.log('VK is inited');
-	getUserName();
+<script type="text/javascript">
+  VK.init(function() {
+     // API initialization succeeded
+     // Your code here
   }, function() {
-
-	console.log('error');
+     // API initialization failed
+     // Can reload page here
 }, '5.103');
 </script>
-
-<script>
-	function(likePost) {
-	<input type="button" value="Кнопочка" onclick="https:api.vk.com/method/users.get?user_ids=253638789&has_mobile&
-	}
-</script>
-
-
 </body>
 </html>
